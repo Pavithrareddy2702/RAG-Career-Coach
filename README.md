@@ -1,78 +1,38 @@
-# RAG Career Coach using Traditional RAG
+# 🎯 RAG Career Coach
 
-This project is an end-to-end **traditional RAG application** for AI School of India members.
+### Intelligent Resume Analysis, Skill Gap Detection & Career Guidance using Traditional RAG
 
-It uses:
+🚀 **Live Demo:**
+[RAG Career Coach Web App](https://rag-career-coach-eszo44jpfb7upecpeksbqc.streamlit.app/?utm_source=chatgpt.com)
 
-- LangChain
-- Groq Chat model
-- HuggingFace Embeddings
-- ChromaDB Vector Database
-- Streamlit UI
-- Resume + Job Description analysis
- <img width="800" height="506" alt="image" src="https://github.com/user-attachments/assets/2743436d-50af-4ec9-8bd1-217a6a184f99" />
+---
 
-## Features
+### Features
 
-- Upload Resume as `.txt`, `.pdf`, or `.docx`
-- Upload Job Description as `.txt`, `.pdf`, or `.docx`
-- Build a RAG index from both documents
-- Retrieve relevant context from Resume and JD
-- Generate:
-  - Resume match summary
-  - Skill gap analysis
-  - Resume improvement suggestions
-  - Project recommendations
-  - Interview preparation questions
+* Resume vs Job Description Matching
+* Skill Gap Analysis
+* Resume Improvement Suggestions
+* Project Recommendations
+* Interview Question Generation
+* ATS-Oriented Career Report
 
-## RAG Stages Covered
+### Tech Stack
 
-1. Document Loading
-2. Chunking
-3. Embeddings
-4. Vector Database Storage
-5. Query Embedding
-6. Context Retrieval
-7. LLM Answer Generation
+* Streamlit
+* LangChain
+* HuggingFace Embeddings
+* FAISS Vector Store
+* Groq Llama 3.1
+* Traditional RAG Pipeline
 
-## Setup
-Install requirements
+### Live Demo
 
-```bash
-pip install -r requirements.txt
-```
+Try the application here:
 
- Add Groq API key
+[Launch RAG Career Coach](https://rag-career-coach-eszo44jpfb7upecpeksbqc.streamlit.app/?utm_source=chatgpt.com)
 
-Create a `.env` file:
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success)](https://rag-career-coach-eszo44jpfb7upecpeksbqc.streamlit.app/)
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/34aa1090-b125-4a16-b485-d273cec1ba7b" />
+<img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/7221d40b-7263-41e4-8eaa-399e64d56d38" />
 
-```env
-GROQ_API_KEY=your_groq_api_key_here
-```
 
- Run app
-
-```bash
-streamlit run app.py
-```
-
-## Suggested Teaching Flow
-
-1. Show the final app demo.
-2. Explain Resume + JD as the knowledge base.
-3. Explain document loading.
-4. Explain chunking.
-5. Explain embeddings.
-6. Explain ChromaDB storage.
-7. Explain query embedding and similarity search.
-8. Explain LLM generation using retrieved context.
-9. Show retrieved chunks in the UI.
-10. Generate complete career report.
-
-## Sample Files
-
-Sample resume and job description are available in the `data/` folder.
-
-## Important Note
-
-For best compatibility with AI libraries, use Python 3.10, 3.11, or 3.12.
