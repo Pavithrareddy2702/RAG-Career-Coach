@@ -29,7 +29,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown('<div class="main-title"> RAG Career Coach- - Traditional RAG System </div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title"> RAG Career Coach - Traditional RAG System </div>', unsafe_allow_html=True)
 st.markdown(
     '<div class="subtitle">Resume + Job Description → RAG Pipeline → Skill Gap Analysis, Resume Suggestions & Interview Prep</div>',
     unsafe_allow_html=True,
