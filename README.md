@@ -36,3 +36,74 @@ Try the application here:
 <img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/7221d40b-7263-41e4-8eaa-399e64d56d38" />
 
 
+## 🏗️ Architecture
+
+Resume + Job Description
+        ↓
+Document Loading
+        ↓
+Text Chunking
+        ↓
+HuggingFace Embeddings
+        ↓
+FAISS Vector Store
+        ↓
+Similarity Retrieval
+        ↓
+Groq Llama 3.1
+        ↓
+Career Guidance Report
+
+## 🔄 RAG Workflow
+
+1. Load Resume and Job Description
+2. Split documents into chunks
+3. Generate embeddings using HuggingFace
+4. Store embeddings in FAISS
+5. Retrieve relevant chunks using similarity search
+6. Pass retrieved context to Groq Llama 3.1
+7. Generate career guidance and recommendations
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/Pavithrareddy2702/RAG-Career-Coach.git
+
+cd RAG-Career-Coach
+
+pip install -r requirements.txt
+
+streamlit run app.py
+
+
+---
+
+```md
+## 📂 Project Structure
+
+RAG-Career-Coach/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── src/
+│   ├── rag_engine.py
+│   └── file_utils.py
+│
+└── data/
+
+
+## 🚀 Future Enhancements
+
+
+- Cover Letter Generator
+- LinkedIn Profile Analyzer
+- Multi-Resume Comparison
+- Job Recommendation Engine
+
+
+
+
+
+
