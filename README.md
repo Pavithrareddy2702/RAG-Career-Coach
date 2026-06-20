@@ -35,34 +35,13 @@ It uses:
 7. LLM Answer Generation
 
 ## Setup
-
-### 1. Create virtual environment
-
-```bash
-python -m venv venv
-```
-
-### 2. Activate environment
-
-Windows PowerShell:
-
-```bash
-venv\Scripts\activate
-```
-
-Mac/Linux:
-
-```bash
-source venv/bin/activate
-```
-
-### 3. Install requirements
+Install requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Add Groq API key
+ Add Groq API key
 
 Create a `.env` file:
 
@@ -70,7 +49,7 @@ Create a `.env` file:
 GROQ_API_KEY=your_groq_api_key_here
 ```
 
-### 5. Run app
+ Run app
 
 ```bash
 streamlit run app.py
