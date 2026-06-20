@@ -10,6 +10,7 @@ It uses:
 - ChromaDB Vector Database
 - Streamlit UI
 - Resume + Job Description analysis
+ <img width="800" height="506" alt="image" src="https://github.com/user-attachments/assets/2743436d-50af-4ec9-8bd1-217a6a184f99" />
 
 ## Features
 
