@@ -44,7 +44,7 @@ with st.sidebar:
     st.markdown("1. Load Resume & JD")
     st.markdown("2. Split into Chunks")
     st.markdown("3. Convert to Embeddings")
-    st.markdown("4. Store in ChromaDB")
+    st.markdown("4. Store in FAISS Vector Store")
     st.markdown("5. Retrieve Relevant Context")
     st.markdown("6. Generate Career Advice")
 
@@ -140,12 +140,27 @@ st.divider()
 st.markdown("### 🧠 How this Traditional RAG Project Works")
 st.markdown(
     """
-1. **Load documents:** Resume and Job Description are converted into LangChain `Document` objects.  
-2. **Chunking:** Large text is split using `RecursiveCharacterTextSplitter`.  
-3. **Embeddings:** Each chunk is converted into a numerical vector using HuggingFace embeddings.  
-4. **Vector Database:** Chunks and embeddings are stored inside ChromaDB.  
-5. **Query Embedding:** User question is also converted into an embedding.  
-6. **Similarity Search:** ChromaDB finds the most relevant resume/JD chunks.  
-7. **LLM Generation:** Groq Llama model generates the final career guidance using only retrieved context.  
+### Traditional RAG Workflow
+
+1. **Document Loading**
+   - Resume and Job Description are converted into LangChain Documents.
+
+2. **Chunking**
+   - Large documents are split into smaller overlapping chunks using RecursiveCharacterTextSplitter.
+
+3. **Embedding Generation**
+   - Each chunk is converted into a dense vector using HuggingFace Embeddings.
+
+4. **Vector Storage**
+   - Embeddings are stored in a FAISS Vector Database for efficient retrieval.
+
+5. **Query Processing**
+   - User questions are converted into embeddings.
+
+6. **Semantic Retrieval**
+   - FAISS retrieves the most relevant chunks from the Resume and Job Description.
+
+7. **LLM-Powered Analysis**
+   - Groq Llama 3.1 uses the retrieved context to generate skill-gap analysis, resume suggestions, project recommendations, and interview preparation guidance.
 """
 )
