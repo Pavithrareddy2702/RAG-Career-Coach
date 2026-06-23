@@ -3,7 +3,8 @@
 ### Intelligent Resume Analysis, Skill Gap Detection & Career Guidance using Traditional RAG
 
 🚀 **Live Demo:**
-[RAG Career Coach Web App](https://rag-career-coach-eszo44jpfb7upecpeksbqc.streamlit.app/?utm_source=chatgpt.com)
+
+https://rag-career-coach.onrender.com
 
 ---
 
